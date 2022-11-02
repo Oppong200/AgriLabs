@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AgriLabs</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+<div>
+    <!-- NavBar -->
+    <div>
+    <header>
+        <div class="logo">
+            <img src="images/AGRILABS.png" alt="AGRILABS Logo" width="100" height="">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <a href="">Services</a>
+                </li>
+                <li>
+                    <a href="">FAQ</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+                <li>
+                    <a href="login.html" class="active">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    </div>  
+    <!-- NavBar End -->
+
+    <div class="form_model">
+        <div class="form_toggle">
+        </div>
+
+    <!-- Sign Up -->
+
+    <!-- Forgot Code? -->
+    <div id="forgot-form">
+        <h1>FORGOT CODE?</h1>
+        <form>
+            <input type="tel" placeholder="Phone Number" name="">
+            <p>A different login code will be sent to your phone.<br> Kindly check and login.</p>   
+            <button type="button" class="btn login">GET CODE</button>
+        </form>
+    </div> 
+    <!-- Login End -->
+    </div> 
+</div>
+
+<!-- Toggle Script -->     
+    <script type="text/javascript">
+        hamburger =document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+<!-- Toggle Script -->     
+</body>
+</html>

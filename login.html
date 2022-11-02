@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AgriLabs</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="AGRILABS Logo" width="100" height="">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <a href="">Services</a>
+                </li>
+                <li>
+                    <a href="">FAQ</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+                <li>
+                    <a href="login.html" class="active">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    </div>  
+    <!-- NavBar End -->
+
+    <div class="form_model">
+        <div class="form_toggle">
+            <button id="signup-toggle" onclick="toggleSignup()">SIGN UP</button>
+            <button id="login-toggle" onclick="toggleLogin()">LOGIN</button>
+        </div>
+
+    <!-- Sign Up -->
+    <div id="signup-form">
+        <form action="">
+            <label for="type">I am a</label> <br>
+            <select name="type" id="type">
+                <option value="frmr">Farmer</option>
+                <option value="byr">Buyer</option>
+                <option value="invstr">Investor</option>
+            </select><br>
+            <input type="text" placeholder="First Name" name="">
+            <input type="email" placeholder="Email" name="">
+            <input type="text" placeholder="Ghana Card Number" name="">
+            <input type="tel" placeholder="Phone Number" name="">
+            <input type="text" placeholder="Farm Location" name="">
+            <select name="commodity" id="commodity">
+                <option value="">Commodity</option>
+            </select>
+            <input type="password" placeholder="Enter Password" name="">
+            <input type="password" placeholder="Confirm Password" name=""><br>
+            <label for="hear">How did you hear about us?</label> <br>
+            <select name="hear" id="hear">
+                <option value="ggle">Google Search</option>
+            </select><br>
+            <button type="submit" class="btn login" formaction="./dashboard.html">SIGN UP</button>
+        </form>
+     <!-- Sign Up End -->
+    </div>   
+    
+    <!-- Login -->
+    <div id="login-form">
+        <form>
+            <input type="tel" placeholder="Phone Number" name="">
+            <input type="password" placeholder="Enter your unique code" name="">
+            <p><a href="forgot.html">Forgot Code?</a></p>   
+            <button type="submit" class="btn login" formaction="./dashboard.html">LOGIN</button>
+        </form>
+    </div> 
+    <!-- Login End -->
+</div> 
+<!-- Toggle Script -->     
+    <script type="text/javascript">
+        function toggleSignup(){
+            document.getElementById("login-toggle").style.backgroundColor="rgb(235,235,235)";
+            document.getElementById("login-toggle").style.color="#222";
+            document.getElementById("signup-toggle").style.backgroundColor="#01963C";
+            document.getElementById("signup-toggle").style.color="#fff";
+            document.getElementById("signup-form").style.display="block";
+            document.getElementById("login-form").style.display="none";
+        }
+        function toggleLogin(){
+            document.getElementById("login-toggle").style.backgroundColor="#01963C";
+            document.getElementById("login-toggle").style.color="#fff";
+            document.getElementById("signup-toggle").style.backgroundColor="rgb(235,235,235)";
+            document.getElementById("signup-toggle").style.color="#222";
+            document.getElementById("login-form").style.display="block";
+            document.getElementById("signup-form").style.display="none";
+        }
+
+
+        hamburger =document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+<!-- Toggle Script -->     
+</body>
+</html>

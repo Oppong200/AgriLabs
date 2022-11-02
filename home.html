@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="./fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+  <link rel="stylesheet" href="./css/forgot.css" />
+  <title>AgriLabs</title>
+</head>
+
+<body>
+  <section class="navbar" id="navigation">
+    <nav class="nav-ul">
+      <div class="logo">
+        <a href=""><img src="./images/logo.png" alt="" /></a>
+        <i class="fa-solid fa-bars fq" onclick="myFunction()"></i>
+      </div>
+      
+      <div class="nav-links" id="mobMenu">
+        <ul>
+          <li><a href="#navigation">Home</a></li>
+          <li><a href="#whatwedo">About Us</a></li>
+          <li><a href="#myservices">Services</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li>
+            <form action="./login.html">
+              <button type="submit" class="signUp">Sign Up</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <section class="intro">
+    <h1 class="intro-header">
+      BRIDGING THE GAP BETWEEN FARMERS AND THEIR INVESTORS
+    </h1>
+    <p>Improving productivity and reducing post-harvest losses</p>
+    <button class="services-btn" type="submit">Our Services</button>
+  </section>
+  <section class="what" id="whatwedo">
+    <h1 class="what-header">WHAT WE DO</h1>
+    <div class="what-video">
+      <video class="video" src="./assets/Cameroon_ From helper to multi millionaire farmer in 7 years.mp4" controls width="100%"></video>
+      <div class="player-controls">
+        <button class="play-button"><i class="fa-solid fa-play"></i></button>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="myservices">
+    <h1 class="services-header">OUR SERVICES</h1>
+    <div class="services1">
+      <div class="services1-img">
+        <img src="./images/farm.jfif" alt="">
+      </div>
+      <div class="services1-p">
+        <h1>Agric technical assistance</h1>
+        <p>We are a tech company which provides a platform for farmers
+          to interact with their potential investors, and a pool of for funding and technical assistance.</p>
+          <p>We are partnering with industry experts, who will offer
+            Agric related assistance to farmers, tell of new trends
+            in agriculture so that the farmers can keep up with
+            the changes in their trade.</p>
+        
+      </div>
+    </div>
+    <div class="services2">
+      <div class="services2-p">
+        <h1>Ready market, and equipment to farm</h1>
+        <p>Farmers get ready market, buyers get ready produce, and
+          customers get farm produce to buy anytime they want
+          to. </p>
+          <p>Farmers can also liaise with consumers to purchase the farm
+            produce in order to prevent post-harvest losses. </p>
+          <p>Farmers also have access to a pool of farm tools and equipment which are for rent at a reduced price to
+            increase productivity.</p>
+      </div>
+      <div class="services2-img">
+        <img src="./images/farm2.jfif" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="partners">
+    <div>
+      <h1>WE ARE PROUD TO BE WORKING WITH</h1>
+    </div>
+    <div class="partners-img">
+      <img src="./images/absa_logo.png" alt="">
+      <img src="./images/guta-logo.jpg" alt="">
+      <img src="./images/access.jpg" alt="">
+      <img src="./images/ministry-of-agriculture.jpg" alt="">
+      <p>COMMERCIAL <br>FARM RENTALS</p>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="logo">
+      <img src="./images/logo.png" alt="">
+    </div>
+    <hr>
+    <div class="foot-sections">
+      <div class="foot-sec1">
+        <p>We are a tech company which provides a platform for farmers
+          to interact with their potential investors, and a pool of for funding and technical assistance.</p>
+        <p>We are partnering with industry experts, who will offer
+          Agric related assistance to farmers, tell of new trends
+          in agriculture so that the farmers can keep up with
+          the changes in their trade.</p>
+        <div class="subsec">
+          <div class="call">
+            <div class="phone-h"><i class="fa-solid fa-phone"></i></div>
+            <p>(+233) 54 233 233</p>
+          </div>
+          <div class="mail">
+            <div class="mail-h"><i class="fa-solid fa-envelope"></i></div>
+            <p>(+233) 54 233 233</p>
+          </div>
+          <div class="location">
+            <div class="location-h">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <p>Capital Estate <br>Abesim</p>
+          </div>
+        </div>
+      </div>
+      <div class="foot-sec2">
+        <div class="foot-links">
+          <li><a href="#navigation">Home</a></li>
+          <li><a href="#whatwedo">About Us</a></li>
+          <li><a href="#myservices">Services</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </div>
+      </div>
+      <div class="foot-sec3">
+        <form action="">
+            <h1>GET IN TOUCH WITH US</h1>
+            <input type="text" name="Name" id="" placeholder="Name">
+            <input type="email" name="email" id="" placeholder="Email">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <button type="submit" class="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+    <div class="social">
+      <a href=""><i class="fa-brands fa-slack fa-2x"></i></a>
+      <a href="">
+        <i class="fa-brands fa-google-plus fa-2x"></i>
+      </a>
+      <a href=""><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+      <a href=""><i class="fa-brands fa-twitter fa-2x"></i></a>
+      <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+    </div>
+    <hr>
+    <div class="copy">&copy; Copyright 2022. All Rights Reserved. <a href="">AgriLabs</a></div>
+  </section>
+
+  <script src="./js/video.js">
+    
+  </script>
+</body>
+
+</html>

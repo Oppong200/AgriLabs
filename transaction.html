@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/forgot.css" />
+    <title>Forgot Password?</title>
+  </head>
+
+  <body>
+    <section class="navbar">
+      <nav class="nav-ul">
+        <div class="logo">
+          <a href=""><img src="./images/logo.png" alt="" /></a>
+          <i class="fa-solid fa-bars fq" onclick="myFunction()"></i>
+        </div>
+        <div class="nav-links" id="mobMenu">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li>
+              <button type="submit" class="signUp">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section class="dashboard">
+        <div class="profile-section">
+            <h1>Welcome <span class="profile-name">Michael!</span></h1>
+            <button class="profile" type="menu"></button>
+        </div>
+        <div class="dash-nav-section">
+            <li class="dash-nav-links"><a href="./dashboard.html">My Stats</a></li>
+            <li class="dash-nav-links"><a href="./farms.html">My Farms</a></li>
+            <li class="dash-nav-links"><a href="./transaction.html">My Transactions</a></li>
+        </div>
+        <div class="farm">
+            <table class="farm-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>FARM NAME</th>
+                        <th>ACTIVITY</th>
+                        <th>AMOUNT</th>
+                        <th>DATE</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Fish farm</td>
+                        <td>Planting</td>
+                        <td>GHc 4000.00</td>
+                        <td>11-10-2022</td>
+                        <td>paid</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cocoa farm</td>
+                        <td>Pruning</td>
+                        <td>GHc 3540.00</td>
+                        <td>11-10-2022</td>
+                        <td>pending</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Maize farm</td>
+                        <td>Harvesting</td>
+                        <td>GHc 4000.00</td>
+                        <td>11-10-2022</td>
+                        <td>paid</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Vegetable farm</td>
+                        <td>Spraying</td>
+                        <td>GHc 200.00</td>
+                        <td>11-10-2022</td>
+                        <td>pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tool">
+            <a class="tools" href="">In need of farm tools and machinery? Hire or buy here</a>
+        </div>
+    </section>
+    <script src="./js/video.js"></script>
+  </body>
+</html>
